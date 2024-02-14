@@ -1,0 +1,214 @@
+body {
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* copy paste disable */
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Add your existing CSS styles here */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo-container {
+  flex: 1; /* Take up available space, pushing the logo to the center */
+  text-align: center; /* Center the content inside the logo-container */
+}
+
+.logo-container img {
+  max-width: 100px; /* Adjust the max-width of the logo as needed */
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contacts a {
+ 
+ text-decoration: none;
+ color: #fff;
+
+}
+
+.swiper-container {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  margin-bottom: 20px; /* Optional: Add margin for spacing */
+  position: sticky;
+  top: 0; /* Initially set top to 0 */
+  z-index: 1000;
+  height: 400px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+}
+
+/* Existing styles for the swiper image */
+.swiper-slide img {
+  max-height: 100%;
+  width: auto;
+}
+
+.swiper-container.sticky {
+  margin-top: 60px; /* Adjust the margin based on your navigation bar's height */
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+  opacity: 75%;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section .home {
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+#about {
+  color: white;
+  background-color: #2C290F; /* You can change this color to your preference */
+  padding: 20px; /* Adding some padding for better readability */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+.AboutDescipt {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+  /* Grid Container Styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Grid Container Styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Grid Item Styling */
+  .grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+  }
+
+  .modal-content {
+    background-color: #dddddd;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Close Button Styling */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Show Modal Animation */
+  .modal.active {
+    display: block;
+  }
+
+  .modal-content.active {
+    opacity: 1;
+  }
+
+  ul li img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Add some spacing between the image and the text */
+    vertical-align: middle; /* Align the images vertically */
+  }
+  
+  /* Media Query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
