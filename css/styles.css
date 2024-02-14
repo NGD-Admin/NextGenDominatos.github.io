@@ -206,9 +206,31 @@ footer {
     vertical-align: middle; /* Align the images vertically */
   }
   
-  /* Media Query for smaller screens */
-  @media only screen and (max-width: 768px) {
-    .modal-content {
-      width: 90%;
-    }
+  /* Adjust height for smaller screens */
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    height: 300px; /* Adjust the height for smaller screens */
   }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .AboutDescipt {
+    text-align: justify;
+    padding: 0%;
+  }
+  
+}
+
+/* Adjust height for even smaller screens */
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    height: 200px; /* Adjust the height for even smaller screens */
+  }
+}
+
+/* Adjust margin-top when sticky */
+.swiper-container.sticky {
+  margin-top: 60px; /* Adjust the margin based on your navigation bar's height */
+}
